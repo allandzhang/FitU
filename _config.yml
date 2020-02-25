@@ -1,1 +1,7 @@
 theme: jekyll-theme-minimal
+
+#URL
+## if your site is put in a subdirectory, set url as "http://yoursite.com/child" and 
+root: /allandzhang.github.io/FitU/
+permalink: :year/:month/:day/:title/
+permalink_defaults:

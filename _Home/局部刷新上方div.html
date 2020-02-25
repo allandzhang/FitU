@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn" lang="zh-cn">
+
+<!-- --------------------------------------------------------------------------------------------------------------- -->
+<head lang="en">
+	<meta http-equiv="content-type"   content="text/html; charset=utf-8" />
+</head>
+
+<!-- --------------------------------------------------------------------------------------------------------------- -->
+<body id="bd" class="fs3" >
+
+
+<div id="refresh" style="text-align: center;">
+<!-- --------------------------------------------------------------------------------------------------------------- -->
+<script language="JavaScript">
+setTimeout(function(){window.location.reload()}, 10000);     /* 每1000一秒 刷新当前页面. */
+/*      */
+
+var mess1="";
+
+/*  document.write("<center><font color='#0000FF' size=4><b>")  */
+
+document.all.refresh.innerHTML="<center><font color='#0000FF' size=4><b>";
+day = new Date( )
+hr = day.getHours( )
+if (( hr >= 0 ) && (hr <= 5 ))
+mess1="已经夜深了，请注意休息哦！"
+if (( hr >= 5 ) && (hr < 7))
+mess1="西方谚语：五点起床，百世兴旺"
+if (( hr >= 7 ) && (hr < 12))
+mess1="上午好，祝您保持心情愉快，加油努力！"
+if (( hr >= 12) && (hr <= 13))
+mess1="现在是午饭时间，你做什么好吃的了吗？"
+if (( hr >= 13) && (hr <= 14))
+mess1="该午休了，希望您能够劳逸结合！ "
+if (( hr >= 14) && (hr <= 17))
+mess1="努力的坚持，专注的存在"
+if (( hr >= 17) && (hr <= 19))
+mess1="该吃晚饭了，或者做饭，休息下，才好继续努力"
+if ((hr >= 19) && (hr <= 20))
+mess1="休息片刻，资讯时间，注意对专业/行业资讯的关注"
+if ((hr >= 20) && (hr <= 23))
+mess1="晚上8点到12点做了什么，可以决定很多事情"
+if ((hr >= 23) && (hr <= 24))
+mess1="一天又快过去了，你今天收获很多吧？"
+document.write(mess1)
+document.write("</b></font></center>")
+</script>
+</div>
+
+    
+    
+    
+    
+    
+<form name="forms">
+<p>仅刷新上方div，此处不刷新</p>
+<p>当前此处随上方div每隔10秒刷新一次</p>
+<input name="input" size="12">
+<script language="javascript">
+var second=0;
+var minute=0;
+var hour=0;
+idt=window.setTimeout("interval();",1000);
+function interval(){
+second++;
+if(second==60){second=0;minute+=1;}
+if(minute==60){minute=0;hour+=1;}
+document.forms.input.value=hour+"时"+minute+"分"+second+"秒";
+idt=window.setTimeout("interval();",1000);}
+</script>
+</form>
+    
+
+
+</body>
+</html>

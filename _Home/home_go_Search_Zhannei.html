@@ -1,0 +1,334 @@
+﻿<!Doctype html>
+<html >
+    <head>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+       <title>多站单搜，切换自如！</title>
+       <meta name="description" content="集成主流搜索引擎，化繁为简，立刻找到你想要的！" />
+       <meta name="keywords" content="多站单搜，多搜索引擎集合，一页直达" />
+
+<style type="text/css">
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,form,fieldset,legend,button,input,textarea,th,td {
+	padding:0px;
+	margin: 0px;
+	text-align:left;
+	font-size: 14px;
+	list-style: none
+}
+a {color: #000000; text-decoration:none}
+.anniu {
+	cursor: pointer;
+}
+.s-bottom-ctner { position:fixed; width:100%; z-index:1; bottom: 0px; text-align: center; background-color: #E3E3E3; padding: 5px; color: #666; font-size: 12px; left: 5px; }
+.s-bottom-ctner a { color: #666; text-decoration: none; }
+
+.bdsug {
+	position:absolute;
+	top:15px;
+	left:170px;
+	width:418px;
+	background:#fff;
+	display:none;
+	border:1px
+    solid #817F82;
+	border-color:#888;
+	border-radius:5px;
+	/* (height/2) + border-width */border-style:solid;
+	border-width:2px;
+	margin-top:15px;
+}
+.bdsug li {
+	width:402px;
+	color:#000;
+	font:14px arial;
+	line-height:25px;
+	padding:0
+            8px;
+	position:relative;
+	cursor:default
+}
+.bdsug li.bdsug-s {
+	background:#ebebeb
+}
+#form1
+            .bdsug {
+	top:70px
+}
+.bdsug-store span,.bdsug-store b {
+	color:#7A77C8
+}
+.bdsug-store-del {
+	font-size:12px;
+	color:#666;
+	text-decoration:underline;
+	position:absolute;
+	right:8px;
+	top:0;
+	cursor:pointer;
+	display:none
+}
+.bdsug-s
+            .bdsug-store-del {
+	display:inline-block
+}
+.bdsug-ala {
+	display:inline-block;
+	border-bottom:1px
+            solid #e6e6e6
+}
+.bdsug-ala h3 {
+	line-height:14px;
+	background:url()
+            no-repeat left center;
+	margin:6px 0 4px 0;
+	font-size:12px;
+	font-weight:normal;
+	color:#7B7B7B;
+	padding-left:20px
+}
+.bdsug-ala
+            p {
+	font-size:14px;
+	font-weight:bold;
+	padding-left:20px
+}
+.bdsug-store span,.bdsug-store
+            b {
+	color:#7A77C8
+}
+.bdsug-store-del {
+	font-size:12px;
+	color:#666;
+	text-decoration:underline;
+	position:absolute;
+	right:8px;
+	top:0;
+	cursor:pointer;
+	display:none
+}
+.bdsug-s
+            .bdsug-store-del {
+	display:inline-block
+}
+.bdsug-ala {
+	display:inline-block;
+	border-bottom:1px
+            solid #e6e6e6
+}
+.bdsug-ala h3 {
+	line-height:14px;
+	background:url()
+            no-repeat left center;
+	margin:6px 0 4px 0;
+	font-size:12px;
+	font-weight:normal;
+	color:#7B7B7B;
+	padding-left:20px
+}
+.bdsug-ala
+            p {
+	font-size:14px;
+	font-weight:bold;
+	padding-left:20px
+}
+#form1 .bdsug .bdsug-direct {
+	width:auto;
+	padding:0;
+	border-bottom:1px
+            solid #f1f1f1
+}
+#m .bdsug .bdsug-direct p {
+	color:#00c;
+	font-weight:bold;
+	line-height:34px;
+	padding:0
+            8px;
+	margin-top:0;
+	cursor:pointer;
+	white-space:nowrap;
+	overflow:hidden
+}
+#m .bdsug
+            .bdsug-direct p img {
+	width:16px;
+	height:16px;
+	margin:7px 6px 9px 0;
+	vertical-align:middle
+}
+#m
+            .bdsug .bdsug-direct p span {
+	margin-left:8px
+}
+#form1 .bdsug {
+	width:715px
+}
+#form1
+            .bdsug li {
+	width:700px
+}
+#form .bdsug {
+	width:330px
+}
+#form .bdsug li {
+	width:330px
+}
+#form
+            .bdsug .bdsug-direct {
+	width:auto
+}
+
+</style>
+
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="css/ie7.css" /><![endif]-->
+<link rel="stylesheet" href="//css.lxxl.in/bootstrap/3.3.7/css/bootstrap.min.css">
+<script type="text/javascript" src="//js.lxxl.in/jquery/1.11.3/jquery.min.js"></script>
+</head>
+
+
+<body>
+
+<form action="search.php" method="get" id="form" name="form" target="_parent">
+<img src="images/zoxo.png" width="16" height="16" border="0" alt="zoxo"  />
+
+<a href="./home_go_H100_Traditional.html" target="_blank">首页</a>&nbsp;
+
+<input size="40" id="kw" name="keyword" type="text" value="">
+<input name="num" type="hidden" value=""/>
+<input name="one" type="hidden" value="baidu" id="dansou"/> 
+<input value="百度" type="button" class="btn btn-success btn-xs" onclick="dansou.value='baidu';submit()" />
+<input value="搜狗" type="button" class="btn btn-info btn-xs"    onclick="dansou.value='sogou';submit()" />
+<input value="360" type="button" class="btn btn-warning btn-xs" onclick="dansou.value='so';submit()" />
+
+<input value="谷歌" type="button" class="btn btn-primary btn-xs" onclick="dansou.value='google';submit()" />
+<input value="必应" type="button" class="btn btn-danger btn-xs"  onclick="dansou.value='bing';submit()" />
+
+<input value="神马" type="button" class="btn btn-black btn-xs" onclick="dansou.value='sm';submit()" />
+
+<!--<input value="ASK" type="button" class="btn btn-lighter btn-xs" onclick="dansou.value='ASK';submit()" />--->
+<input value="自定" type="button" class="btn btn-default btn-xs" onclick="dansou.value='mini';submit()" />
+<input name="two" type="hidden" value="google"/>
+<input name="three" type="hidden" value="bing"/>
+<input name="four" type="hidden" value="so"/>
+</form>
+
+<iframe src="https://www.baidu.com/s?pn=0&rn=&wd=" id="iframe" height="100%" width="100%"  frameborder="0" ></iframe>
+<div class="s-bottom-ctner">FitU &copy; 2017</div>
+
+<script type="text/javascript">
+window.onload = function(){
+	if(document.form.keyword.value==''){ 
+             document.form.keyword.focus();
+			}
+}
+var h = document.documentElement.clientHeight-55;
+document.getElementById("iframe").style.height=h+"px";
+
+function changeFrameHeight(){
+var h = document.documentElement.clientHeight-55;
+document.getElementById("iframe").style.height=h+"px";
+}
+window.onresize=function(){  
+     changeFrameHeight();  
+} 
+</script>
+<div style="display:none"><script src="js/statistical.js" type="text/javascript"></script></div>
+<!--satrt输入框提示-->
+<script>
+var bds={
+    se:{},
+    su:{
+        urdata:[],
+                urSendClick:function(){}
+    },
+    util:{},
+    use:{},
+    comm : {
+        sugHost : "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su",
+   }
+};
+var name,navigate,al_arr=[];
+var selfOpen = window.open;eval("var open = selfOpen;");
+var isIE=navigator.userAgent.indexOf("MSIE")!=-1&&!window.opera;
+var E = bds.ecom= {};
+bds.se.mon = {'loadedItems':[],'load':function(){},'srvt':-1};
+</script>
+<script type="text/javascript">
+var Cookie = {
+    get: function(e, t) {
+        var o = document.cookie.match(new RegExp("(^| )" + e + "=([^;]*)(;|$)"));
+        return null != o ? unescape(o[2]) : t
+    },
+}; !
+function() {
+    function save(e) {
+    }
+    function set(e, t) {
+        options[e] = t
+    }
+    function get(e) {
+        return options[e]
+    }
+    function clearCookie(e) {
+    }
+    function reset(e) {
+        options = defaultOptions,
+        save(e)
+    }
+    var defaultOptions = {
+        sugSet: 1,
+        sugStoreSet: 1,
+    },
+    options = {},
+    tmpName,
+    expire30y = new Date;
+    expire30y.setTime(expire30y.getTime() + 94608e7);
+    try {
+        "isSwitch" in options || (options.isSwitch = 2 == Cookie.get("ORIGIN", 2) ? 0 : 1 == Cookie.get("ORIGIN", 2) ? 2 : 1),
+        "imeSwitch" in options || (options.imeSwitch = Cookie.get("bdime", 0))
+    } catch(e) {}
+    window.UPS = {
+        reset: reset,
+        get: get,
+        set: set,
+    }
+} (),
+function() {
+    var t = navigator && navigator.userAgent ? navigator.userAgent: "",
+    o = document && document.cookie ? document.cookie: "",
+    i = !!(t.match(/(msie [2-8])/i) || t.match(/windows.*safari/i) && !t.match(/chrome/i) || t.match(/(linux.*firefox)/i) || t.match(/Chrome\/29/i) || t.match(/mac os x.*firefox/i) || o.match(/\bISSW=1/) || 0 == UPS.get("isSwitch"));
+    bds && bds.comm && (bds.comm.supportis = !i, bds.comm.isui = !0),
+    window.__restart_confirm_timeout = !0,
+    window.__confirm_timeout = 8e3,
+    window.__disable_is_guide = !0,
+    window.__disable_swap_to_empty = !0,
+    window.__switch_add_mask = !0;
+    var s = "js/all_async_search_9433df5.js",
+    n = "/script";
+    document.write("<script src='" + s + "'><" + n + ">"),
+    bds.comm.newindex && $(window).on("index_off",
+    function() {
+        $('<div class="c-tips-container" id="c-tips-container"></div>').insertAfter(""),
+        window.__sample_dynamic_tab && $("#s_tab").remove()
+    }),
+    bds.comm && bds.comm.ishome && Cookie.get("H_PS_PSSID") && (bds.comm.indexSid = Cookie.get("H_PS_PSSID"))
+} ();
+
+</script>
+<script>
+if(bds.comm.supportis){
+    window.__restart_confirm_timeout=true;
+    window.__confirm_timeout=8000;
+    window.__disable_is_guide=true;
+    window.__disable_swap_to_empty=true;
+}
+initPreload({
+    'isui':true,
+    'index_form':"#form",
+    'index_kw':"#kw",
+    'result_form':"#form",
+    'result_kw':"#kw"
+});
+</script>
+
+<!--end输入框提示-->
+</body>
+</html>

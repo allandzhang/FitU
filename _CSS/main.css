@@ -1,0 +1,335 @@
+﻿
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* --------------------------------------------------- 浏览器版本 --------------------------------------------------- */
+/* div {margin:0;padding:0;}*/ 
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* -------------------------------------------------- Begin: body -------------------------------------------------- */
+/* body{font-family: "Microsoft Yahei", "微软雅黑", Tahoma, Arial, Helvetica, STHeiti;font-size: 14px;color: #666;background-attachment:fixed;} */
+body {font-family: TimesNewRoman; line-height:1.5; }
+body#bd{background: rgb(189, 215, 238);}		          /* 页面背景色 #7FFFD4 绿色   #33CCFF rgb(222, 235, 247)  rgb(189, 215, 238)*/
+
+body.fs1{font-size: 9px;}		              /* px，相对单位 */
+body.fs2{font-size: 12px;}                    /* 常规 */
+body.fs3{font-size: 14px;}                    /* 黑体，标题，关键词 */
+body.fs4{font-size: 16px;}                    /* 文章标题 1em */
+body.fs5{font-size: 18px;}
+body.fsen{font-size: 11px;}                   /*英文，verdana,tahoma */
+
+#wrapper {									  /* 页面长度原则上不超过3屏，宽度不超过1屏 */
+	margin: 0 auto;	border: 0; padding: 0 0 40px;
+	width: 996px;			                  /* 页面宽度超过1000，如1260px，适合大屏幕17寸等，首屏高度720px,800px */
+}
+
+
+#bodystyle h3 {	font-size: 100%; background: #87CEEB; border: none; margin-bottom: 0;}  /* ----- SkyBlue ----- */
+#bodystyle ul li{margin: 0;	padding: 0 0 0 15px; margin-bottom:4px;}
+
+#bodystyle a{color:black; text-decoration:none}       /* 链接颜色，无下划线 */
+
+#bodystyle {clear: both;}		                     /*  主要是用于对多个div浮动的清除  */
+
+.box-left,.box-center,.box-right{float: left; overflow: hidden;}     /*  页面整体三栏分布  */
+
+.footer{text-align: center;margin-bottom: 10px;margin-top:30px;font-size:10px;color:#999;}
+/* ----- Normal link ----- */
+a:link,a:focus,a:hover,a:active,a:visited{color: blue;text-decoration: none;}
+
+/* div中所有class为ulli的，ul中的a样式(包括尚未点击的和点击过的样式) */
+div ul li a, div ul li a:visited
+{                    /* background-color: ;    背景色 */
+    border: 0px #4e667d solid;            /* 边框 */
+    color: #dde4ec;                       /* 文字颜色 */
+    display: block;                     /* 此元素将显示为块级元素，此元素前后会带有换行符 */
+    line-height: 1.2em;                 /* 行高 */
+    padding: 0px 5px 0px 5px;            /* 内部填充的距离 */
+    text-decoration: none;               /* 不显示超链接下划线 */
+    white-space: nowrap;                /* 对于文本内的空白处，不会换行，文本会在在同一行上继续，直到遇到 <br> 标签为止。 */
+}
+/* 所有class为ulli的div中的ul中的a样式(鼠标移动到元素中的样式) */
+div ul li a:hover
+{   background-color: #bfcbd6;          /* 背景色 */
+    color: #465c71;                     /* 文字颜色 */
+    text-decoration: none;              /* 不显示超链接下划线 */
+}
+/* 所有class为ulli的div中的ul中的a样式(鼠标点击元素时的样式) */
+div ul li a:active
+{   background-color: #465c71;          /* 背景色 */
+    color: #cfdbe6;                     /* 文字颜色 */
+    text-decoration: none;              /* 不显示超链接下划线 */
+}
+
+/* ----- Image ----- */
+img          {margin: 0;padding: 0;}
+img .caption {margin-top: 15px;}
+a img {border: none;}
+/* ---------------------------------------------------- End: body --------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* ---------------------------------------------- Begin: Four tabs ---------------------------------------------- */
+.lib_Tab       {width:325px;margin:0px; padding:0px; margin-bottom:15px;}		      /* 选项卡 Tab */
+.lib_tabborder {border:1px solid grey;}
+.lib_Menubox   {height:30px;line-height:30px;position:relative;}                      /* 菜单   Menu height */
+.lib_Menubox ul{margin:0px;padding:0px;list-style:none; position:absolute;
+		        top:3px; left:0;  height:25px;text-align:left;}
+.lib_Menubox li{float:left;display:block;cursor:pointer;width:60px; color:black;font-weight:bold;
+		        height:25px; line-height:25px; background-color:#E4F2FD;
+		        overflow: hidden; white-space: nowrap;}
+
+.lib_Menubox li.hover{padding:0px;background:#fff;width:80px;                         /* 菜单单个宽度 */
+		        border-left:1px solid grey;
+		        border-top:1px solid #95C9E1;
+		        border-right:1px solid #95C9E1; color:blue; height:25px;line-height:25px;}
+
+.lib_Contentbox{clear:both;margin-top:0px; border-top:none;                          /* 内容及其框的高度 0.618*/
+		        height:185px; text-align:left;padding-top:0px;}
+
+.lib_Contentbox ul, li{list-style-type:none; margin:0px 0px 0px -30px;		         /* 去掉链接前的小黑点，注意加， */
+}
+
+/* 需配合js */
+/* ----------------------------------------------- End: Four tabs ----------------------------------------------- */
+
+.lib_Contentbox_single{clear:both;margin-top:0px; border-top:none;                          /* 内容及其框的高度 0.618*/
+		        height:215px; text-align:left;padding-top:0px;}
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* ---------------------------------------------- Begin: Three tabs ---------------------------------------------- */
+.lib3_Tab       {width:325px;margin:0px; padding:0px; margin-bottom:15px;}		      /* 选项卡 Tab */
+.lib3_tabborder {border:1px solid grey;}
+.lib3_Menubox   {height:30px;line-height:30px;position:relative;}                      /* 菜单   Menu height */
+.lib3_Menubox ul{margin:0px;padding:0px;list-style:none; position:absolute;
+		        top:3px; left:0;  height:25px;text-align:left;}
+.lib3_Menubox li{float:left;display:block;cursor:pointer;width:83px; color:black;font-weight:bold;   /* 菜单标题单个宽度 */
+		        height:25px; line-height:25px; background-color:#E4F2FD;
+		        overflow: hidden; white-space: nowrap;}
+
+.lib3_Menubox li.hover{padding:0px;background:#fff;width:108px;                         /* 菜单单个宽度 */
+		        border-left:1px solid grey;
+		        border-top:1px solid #95C9E1;
+		        border-right:1px solid #95C9E1; color:blue; height:25px;line-height:25px;}
+
+.lib3_Contentbox{clear:both;margin-top:0px; border-top:none;                          /* 内容及其框的高度 0.618*/
+		        height:185px; text-align:left;padding-top:0px;}
+
+.lib3_Contentbox ul, li{list-style-type:none; margin:0px 0px 0px -30px;		         /* 去掉链接前的小黑点，注意加， */
+}
+
+/* 需配合js */
+/* ----------------------------------------------- End: Three tabs ----------------------------------------------- */
+
+.lib3_Contentbox_single{clear:both;margin-top:0px; border-top:none;                          /* 内容及其框的高度 0.618*/
+		        height:215px; text-align:left;padding-top:0px;}
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* ------------------------------------------------------ 主题 ------------------------------------------------------ */
+/* .div-inline{display:inline}   */                                           /* ----- 以横排显示div，导航 -----  */
+.div-float{float:left}
+.clear{clear:both}
+
+div.ulli-zhh ul
+{   list-style:none;                                                         /* 去掉ul前面的符号 */
+    margin: 0px -15px 0px -15px;                                             /* 与外界元素的距离为0 */
+    padding: 7px 15px 7px 15px;                                              /* 与内部元素的距离为0 */
+    width:  325px;                                                            /* 宽度根据元素内容调整 */
+}
+/* div中所有class为ulli的，ul中的li样式 */
+div.ulli-zhh ul li{float:left;}                                               /* 向左漂移，将竖排变为横排 */
+/* --------------------- 主题 --------------------------------- */
+
+/* --------------------- 主题横排 4-5    --------------------- */
+div.horiz45 ul
+{   list-style:none;                                                                              /* 去掉ul前面的符号 */
+    margin: 0px 0px 0px -5px; padding: 10px 0px 0px 0px;                             /* 与外界元素和与内部元素的距离为0 */
+    width:  325px;}
+
+/* div中所有class为ulli的，ul中的li样式 */
+div.horiz45 ul li{float:left;width:25%;box-sizing:border-box;height:21px; margin: 0 auto;} /* 向左漂移，将竖排变为横排 */
+/* --------------------- 主题横排 4-5    --------------------- */
+
+
+
+/* --------------------- 主题横排 6-7    --------------------- */
+div.horiz67 ul
+{   list-style:none;                                                                              /* 去掉ul前面的符号 */
+    margin: 0px 0px 0px -5px; padding: 10px 0px 0px 0px;                             /* 与外界元素和与内部元素的距离为0 */
+    width:  325px;}
+
+/* div中所有class为ulli的，ul中的li样式 */
+div.horiz67 ul li{float:left;width:33%;box-sizing:border-box;height:21px; margin: 0 auto;} /* 向左漂移，将竖排变为横排 */
+/* --------------------- 主题横排 6-7    --------------------- */
+
+
+
+/* --------------------- 主题横排 3-4    --------------------- */
+div.horiz34 ul
+{   list-style:none;                                                                              /* 去掉ul前面的符号 */
+    margin: 0px 0px 0px 0px; padding: 10px 0px 0px 0px;                             /* 与外界元素和与内部元素的距离为0 */
+    width:  325px;}
+
+/* div中所有class为ulli的，ul中的li样式 */
+div.horiz34 ul li{float:left;width:88px;box-sizing:border-box;height:21px; margin:0 auto;} /* 向左漂移，将竖排变为横排 */
+/* --------------------- 主题横排 3-4    --------------------- */
+
+
+
+
+/* --------------------- 主题横排 2-3    --------------------- */
+div.horiz23 ul
+{   list-style:none;                                                                              /* 去掉ul前面的符号 */
+    margin: 0px 0px 0px 0px; padding: 10px 0px 0px 0px;                             /* 与外界元素和与内部元素的距离为0 */
+    width:  325px;}
+
+/* div中所有class为ulli的，ul中的li样式 */
+div.horiz23 ul li{float:left;width:55px;box-sizing:border-box;height:21px; margin:0 auto;} /* 向左漂移，将竖排变为横排 */
+/* --------------------- 主题横排 2-3    --------------------- */
+
+
+
+
+
+
+/* ------------------------------------------------------ 主题 ------------------------------------------------------ */
+
+
+
+/* --------------------- 4-5字数 div形式 --------------------- */
+.lib_Contentbox_quartering {margin-left:-20px}                                                /*假设列之间的间距为20px*/
+.column_quartering {float:left;width:25%;padding-left:20px;box-sizing:border-box;}
+/* --------------------- 2-3字数 --------------------- */
+.lib_Contentbox_23quartering {margin-left:-20px}                                              /*假设列之间的间距为20px*/
+.column_23quarter    {float:left;width:81px;padding:0px 0px 0px 20px; box-sizing:border-box;}
+.column_23quartering {float:left;width:61px;padding:0px 0px 0px 20px;box-sizing:border-box; margin-right:-5px}
+
+/* --------------------- 4-5字数 div形式 --------------------- */
+
+
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* -------------------------------------------------- Begin: Menu --------------------------------------------------- */
+
+<type="text/css">
+/* common styling */
+.top-menu {font-family: arial, sans-serif; margin: 0; background:green;
+        width:100%; height:30px; position:relative;                             /* 父级容器设为position：relative，子级的div用position：absolute   */
+}
+
+.top-menu ul {margin:0; padding:0; list-style-type: none; float:left;}          /* 控制一级菜单 居右 */
+.top-menu ul li {float:left; width:120px; text-align:center}                    /* 控制一级菜单 排列 从左向右*/
+
+.top-menu ul li a, .top-menu ul li a:visited {                                  /* 一级菜单 样式 */
+		display:inline-block; float:left;
+		width:90px; text-decoration:none; padding:0 0 0 5px;
+        height:30px; line-height:30px; color:#000;
+        background:#c9c9a7 url(./images/bottl.jpg) bottom right no-repeat;
+}
+
+/* specific to non IE browsers */
+.top-menu ul li:hover a {color:#fff; background:yellow;}                                                 /* 鼠标悬停 全部颜色*/
+
+.top-menu ul li:hover ul {display:inline-block; position:absolute; top:63px; left:460px;                 /* 控制 二级菜单 top、left 控制位置*/
+background:#b3ab79; color:#fff; 
+}
+
+.top-menu ul li:hover ul li:hover ul {display:inline-block; position:absolute; top:30px; left:0px;        /* 控制 三级菜单 */
+color:#000; background:#dfc184;
+}
+
+.top-menu ul li ul {display: none; align:center;}                                                 /* 二级菜单 样式 */
+.top-menu ul li:hover ul li a.hide {background:#bd8d5e url(./images/drop2.gif) bottom right no-repeat; color:#fff;}
+.top-menu ul li:hover ul li:hover a.hide {background:#b3ab79; color:#fff;}
+.top-menu ul li:hover ul li a {displsay:block; background:#b3ab79; color:#fff;}
+.top-menu ul li:hover ul li a:hover {background:#dfc184; color:#000; text-decoration:none;}
+.top-menu ul li:hover ul li:hover a.hide {background:#dfc184; color:#000;}
+
+.top-menu ul li:hover ul li ul {display: none;}                                                    /* 三级菜单 样式 */
+.top-menu ul li:hover ul li:hover ul li a {background:#dfc184; color:#000;}
+.top-menu ul li:hover ul li:hover ul li a:hover {background:#bd8d5e; color:#fff;text-decoration:none;}
+/* -------------------------------------------------- Begin: Menu --------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* ---------------------------------------------------- 菜单横排 ---------------------------------------------------- */
+div.ulli-h ul
+{   list-style:none;                                                         /* 去掉ul前面的符号 */
+	font-size: 12px;
+    margin: 0px -15px 0px -15px;                                             /* 与外界元素的距离为0 */
+    padding: 0px 15px 0px 15px;                                              /* 与内部元素的距离为0 */
+    width: 160px;                                                            /* 宽度根据元素内容调整 */
+}
+/* div中所有class为ulli的，ul中的li样式 */
+div.ulli-h ul li
+{float:left;                                                                 /* 向左漂移，将竖排变为横排 */
+margin: 0px 0px 0px 0px;
+padding: 0px 0px 0px 0px;
+}
+/* ---------------------------------------------------- 菜单横排 ---------------------------------------------------- */
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* ---------------------- 右上角 ---------------------- */
+.header_right{ height:30px; text-align:right; padding-top:0px; padding-right:50px; display:inline;}
+.header_right a{color:#000; text-decoration:underline; line-height:15px; display:block; padding-right:10px; float:right}
+
+.header_left{ height:30px; text-align:left; padding-top:0px; padding-right:50px; display:inline;}
+.header_left a{color:#000; text-decoration:underline; line-height:15px; display:block; padding-right:10px; float:left}
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* ----------------------------------------------------- 可视化 ----------------------------------------------------- */
+/* --------------------- 搜索引擎 --------------------- */
+.search-div{width:720px; margin:0 auto;}
+.search-inputs{height: 30px;width:350px; border: 1px solid #ccc;padding: 4px 0;padding-left: 6px; margin:6px 0px 0px 0px;}
+.search-button-text{height:25px; margin:0px -6px 6px 0px; cursor:pointer; background:CCFF66;}
+
+
+
+/* --------------------- 可视化框格 --------------------- */
+/*  左右底   */
+.main{overflow: visible;text-align: center;}
+.main li{height:21px}
+.main-left {width:99px; float:left;  overflow:hidden; text-align:right; margin-right: 15px;}
+.main-right{width:99px; float:right; overflow:hidden; text-align:left;  position: relative; }
+.main-center{display: block;width: 620px; float: left; overflow:visible;border:1px solid #ACE;background: #fff; margin:5px -20px 5px 20px;}
+.main-bottom{width: 600px; float: left; overflow: hidden; text-align:left; clear:both;}
+
+
+
+.block     {width: 836px;margin: 0 auto;background:transparent;}
+/*  我的网址定制  */
+.sites-wrap{padding: 14px 6px 6px 14px;min-height: 360px;}
+.sites-wrap li{float: left;width:100px;height:90px;position: relative;z-index:1;}
+.sites-wrap li .site-a{display: block;border: 1px solid #ccc;margin-right: 8px;margin-bottom: 8px;padding: 10px 5px;text-decoration: none;}
+.sites-wrap li .site-a,.sites-wrap li img.site-logo{width: 80px;height: 60px;}
+.sites-wrap li img.site-logo{border:none;padding:0;}
+.sites-wrap li .logotitle{font-size: 16px;line-height: 60px;display:block;word-break:keep-all;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.sites-wrap .site-edit{padding:0;border:0;margin:0;position: absolute;top: 0px;left: 67px;display: block;width: 25px;height: 25px;z-index: 199;background: url("../images/edit.gif") no-repeat;}
+.sites-wrap .site-edit:hover {text-decoration: none;}
+.sites-wrap li .site-plus-box a:hover {background-color: #ace;}
+
+a.del {position: absolute;top: 4px;right: 2px;width: 17px;height: 17px;background-image: url(./icon/Website/site_icon.jpg);background-position:0 0;overflow: hidden;margin: 3px 5px 0 0;}a.del:hover {background-position: 0 -17px;}
+
+.site-plus-box a{color: blue;}
+
+.site-plus-icon{position: absolute;bottom:11px; left: 72px; display: block;width: 16px;height: 16px;z-index: 11;
+                background-image:url(./icon/Website/site_icon.jpg);background-repeat: no-repeat;cursor: pointer;opacity: 0.4;
+                filter:alpha(opacity=40); text-decoration: none;}
+
+.site-plus-box{overflow: hidden;background: #FFF;border: #ccc 2px solid;width: 90px;padding:1px;font-size: 14px;z-index: 20000;}
+.site-plus-box a{display: block;border: none;margin: 0;padding: 0;height: 24px;line-height: 24px;text-align: left;padding-left: 4px;overflow: hidden;}
+.site-plus-box a:hover {border: none;background: #ccc;text-decoration: none;}
+.site-plus-box-down{position: absolute;top:78px;right:8px;}
+.site-plus-box-up{position: absolute;bottom: 26px;right:8px;}
+
+/* ----- 以横排显示div，导航 或者 .div-inline{display:inline}   -----  */
+
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* ---------------------------------------------------- 极简搜索 ---------------------------------------------------- */
+.wrap-BSB-search{width:660px; margin:0 auto;}
+/* ---------------------- 搜索框 ---------------------- */
+.search-button-minimalism{height:25px; margin:6px -26px 6px 0px;  border:none; cursor:pointer; background: none;}
+.search-inputs-minimalism{margin: 0px auto;height: 30px;width:500px;border: 1px solid #ccc;padding: 4px 0;padding-left: 6px;}

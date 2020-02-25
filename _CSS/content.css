@@ -1,0 +1,66 @@
+
+/* -------------------------------------------------------------------------------------------------------------------------- */
+/* ---------------------------------------------- Begin: Mutilple tabs Content ---------------------------------------------- */
+.lib_Tab_ct       {margin:0px; padding:0px; margin-bottom:15px;}		      /* 选项卡 Tab */
+.lib_tabborder_ct {border:1px solid grey;}
+.lib_Menubox_ct   {height:30px;line-height:30px;position:relative;}                      /* 菜单   Menu height */
+.lib_Menubox_ct ul{margin:0px;padding:0px;list-style:none; position:absolute;
+		        top:3px; left:0;  height:25px;text-align:left;}
+.lib_Menubox_ct li{float:left;display:block;cursor:pointer;width:60px; color:black;font-weight:bold;
+		        height:25px; line-height:25px; background-color:#E4F2FD;
+		        overflow: hidden; white-space: nowrap;}
+
+.lib_Menubox_ct li.hover{padding:0px;background:#fff;width:76px;                         /* 菜单单个宽度 */
+		        border-left:1px solid grey;
+		        border-top:1px solid #95C9E1;
+		        border-right:1px solid #95C9E1; color:blue; height:25px;line-height:25px;}
+
+.lib_Contentbox_ct{clear:both;margin-top:0px; border-top:none;                          /* 内容及其框的高度 0.618*/
+		        height:185px; text-align:left;padding-top:0px;}
+
+.lib_Contentbox_ct ul, li{list-style-type:none; margin:0px 0px 0px -30px;		         /* 去掉链接前的小黑点，注意加， */
+}
+
+/* 需配合js */
+/* ----------------------------------------------- End: Mutilple tabs Content ----------------------------------------------- */
+
+
+/* --------------------- 主题横排 4-5    --------------------- */
+div.conhoriz45 ul
+{   list-style:none;                                                                              /* 去掉ul前面的符号 */
+    margin: 0px 0px 0px -5px; padding: 10px 0px 0px 0px;                             /* 与外界元素和与内部元素的距离为0 */
+    width:  240px;}
+
+/* div中所有class为ulli的，ul中的li样式 */
+div.conhoriz45 ul li{float:left;width:33.3%;box-sizing:border-box;height:21px; margin: 0 auto;} /* 向左漂移，将竖排变为横排 */
+/* --------------------- 主题横排 4-5    --------------------- */
+
+
+
+
+/* --------------------- 拓展   --------------------- */
+
+.content_left{height:200px; border:1px solid grey; /* 内容及其框的高度 0.618*/
+              margin:0px; padding:10px;}
+.content_left ul{margin:0px; padding:0px;}
+.content_left li{margin:0px; padding:1px;}
+
+/* --------------------- 拓展   --------------------- */
+
+
+
+
+p{ text-indent: 2em;}         /*em是相对单位，2em即现在一个字大小的两倍*/
+
+
+.list_block_300 li {
+	width:290px;
+    margin:0px 0px 0px 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+    
+    }
+
+

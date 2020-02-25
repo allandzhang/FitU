@@ -1,0 +1,101 @@
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* -------------------------------------------------- Begin: article --------------------------------------------- */
+
+article{
+    width:100%;
+    /* background:#06F;*/
+    float:left
+	}
+
+
+header{
+    width:100%;
+    /*background:#093;*/
+	}
+
+section{
+        width:100%;
+}
+
+
+aside{
+    width:20%;
+    background:#F90;
+    float:left
+	}
+
+
+footer{
+    width:100%;
+    background:#F30;
+    float:left
+	}
+/* ---------------------------------------------------- End: article --------------------------------------------------- */
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+/* -------------------------------------------------- Begin: blockquote --------------------------------------------- */
+
+ blockquote {
+    margin: 0;
+}
+
+blockquote p {
+    padding: 15px;
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after {
+    content: '\201D';
+}   
+
+/* ---------------------------------------------------- End: blockquote --------------------------------------------------- */
+
+.continer{
+
+height:100px;
+
+width:100px;
+
+background-color: aqua;
+
+}
+
+.continer div{
+
+display:none;/*默认隐藏*/
+
+}
+
+.continer:hover div{
+
+display:initial;/*当鼠标hover时展示*/
+
+}
+
+
+
+/* 
+<div class="continer">渐进式增强网页应用（PWA）
+<div>我是鼠标悬停展示的内容</div> 
+</div>
+*/
+
+
+
+
+.image_box{}
+.image_box a {color:#333; text-decoration:none;border:2px solid #FFF; float:left; cursor:hand;}   
+.image_box a span{display:none; color:#F00;}   
+.image_box a span h1{font-size:12px; position:absolute; bottom:0; background:#333; color:#FFF; font-weight:normal; text-align:center; width:320px; padding:4px; display:block;  filter:alpha(opacity=60);   -moz-opacity:0.60;   opacity:0.60; top:80px; height:30px;  }  
+.image_box a:hover{color:#999; border:2px solid #333; }   
+.image_box a:hover span{display:inline; position:absolute;}   
+
+
+
+
+

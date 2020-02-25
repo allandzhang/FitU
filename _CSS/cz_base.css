@@ -1,0 +1,65 @@
+
+/* <link rel="stylesheet" type="text/css" href="./_CSS/cz_base.css"> */
+
+ /*TopNav-showWrap -- begin */
+.TopPageHeadWrap{ width:100%;background-color:#fff;}
+
+ /* -- 一级类目 底框 */
+.TopNav-showWrap{height: 40px;position: relative;z-index: 50;overflow: hidden;-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.2);-moz-box-shadow: 0 1px 1px rgba(0,0,0,.2);box-shadow: 0 1px 1px rgba(0,0,0,.2); margin: 21px 0}
+
+.TopNav-showWrap ul,li {margin:0;padding:0;}
+.TopNav-showWrap ul {list-style:none;}
+
+ /* -- height */
+.TopNav-showWrap .TopNav-layout{height: 265px;position: absolute;width: 100%;background-color: #f1f1f1; background-color: #F1F1F1;
+transition: all .2s ease-in;-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.6);-moz-box-shadow: 0 1px 2px rgba(0,0,0,.6);box-shadow: 0 1px 2px rgba(0,0,0,.6)}
+
+.TopNav-showWrap .TopNav-layout .TopNav-menu{height: 40px; background:#4d7bb9;}
+.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content{margin: 0 auto;}
+.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox{width:1000px;margin:0px auto;}
+
+.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox .TopNav-MenuItem{display: inline;float: left;}
+
+ /* -- 一级类目 字号、字体 */
+.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox .TopNav-MenuItem .menu-title
+{display: block;cursor: pointer;color: #fff;font-size: 16px;line-height: 40px;height: 40px;
+border-right: 1px solid #466fb1;border-left:1px solid #5283bd;text-align: center;text-decoration: none;}
+
+.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox .TopNav-MenuItem .current,.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox .TopNav-MenuItem .Mhlight{color: #fde800;}
+
+ /* -- height */
+.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox .TopNav-MenuItem .MenuItemCent
+{height: 210px;border-right: 1px solid transparent;overflow:hidden; border-color: #ddd;border-left: 1px solid transparent;transition: all ease-in .2s;background-color: #f1f1f1;padding-left:12px;padding-top: 14px;}
+
+.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox .TopNav-MenuItem .MenuItemCent .MenuItem-SubList{*zoom:1;}
+.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox .TopNav-MenuItem .MenuItemCent .MenuItem-SubList:after{content: "\0020";display: block;height: 0;clear: both;overflow: hidden;visibility: hidden;}
+.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox .TopNav-MenuItem .MenuItemCent .MenuItem-SubList .SubItem-wp{display: inline;float: left;height: 30px;text-align: center;}
+.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox .TopNav-MenuItem .MenuItemCent .MenuItem-SubList .SubItem-wp .TNMI-SubItem{color: transparent;text-decoration: none;font-size: 14px;line-height: 30px; color: #303030;}
+.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox .TopNav-MenuItem .MenuItemCent .MenuItem-SubList .SubItem-wp .TNMI-SubItem:hover{color: #ff0000;text-decoration:underline;}
+.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox .TopNav-MenuItem:hover .menu-title{background-color: #598cd0;}
+
+ /* --------- TopNav-MenuItem ----------- */
+
+.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox .TopNav-MenuItem:hover .MenuItemCent{background-color: #fff;background-color: rgba(255,255,255,.94);background-color: #fff; }
+
+.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox .TopNav-MenuItem-index{width: 10%;}
+.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox .TopNav-MenuItem-index .menu-title{ border-left:1px solid #466fb1;}
+.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox .TopNav-MenuItem-index .MenuItemCent .MenuItem-SubList .SubItem-wp{width: 100%}
+
+.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox .TopNav-MenuItemOne .menu-title{border-right:1px solid #466fb1;}
+
+.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox .TopNav-MenuItemThree{width: 15%;}
+.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox .TopNav-MenuItemThree .MenuItemCent .MenuItem-SubList .SubItem-wp{width: 100%;}
+
+
+.leftbor{ border-left:1px solid #ddd !important;}
+
+ /* ------------------------ */
+
+.TopNav-showWrap .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox .menu-right-section{display: inline;float: right;width: 138px;}
+.menu-right-list-item{display: inline;float: left;width: 118px;text-align: center;position: relative;}
+.TopNav-showWrap-show .TopNav-layout{background-color: #f1f1f1;background-color: rgba(243,243,243,.9);*background-color: #f1f1f1;*background-color: rgba(243,243,243,.9);}
+.TopNav-showWrap-show .TopNav-layout .TopNav-menu .TopNav-content .TopNav-Centbox .TopNav-MenuItem .MenuItemCent{border-color: #ddd;border-left: 1px solid transparent;}
+
+ /* TopNav-showWrap -- end */
+
